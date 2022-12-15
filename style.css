@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-size: 20px;
+}
+
+header {
+  background-color: cadetblue;
+  height: 80px;
+}
+
+main {
+  min-height: calc(100vh - 80px - 20vw);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: cadetblue;
+  height: 20vw;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin: 10px;
+}
+
+h1 {
+  margin: 0 10px 20px;
+}

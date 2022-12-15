@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS calc() demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/atom-one-dark.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/css.min.js"></script>
+  </head>
+  <body>
+    <header class="centered">Denna header är 80px hög</header>
+    <main>
+      <h1>Demo av funktionen <code>calc()</code></h1>
+      <p>
+        Funktionen
+        <a href="https://www.w3schools.com/cssref/func_calc.php"
+          ><code>calc()</code></a
+        >
+        i CSS kan användas för att beräkna saker, t.ex. storlek på element.
+      </p>
+      <p>
+        Den här vita huvuddelen av sidan har minsta höjden
+        (<code>min-height</code>) satt till
+        <code>calc(100vh - 80px - 20vw)</code>.
+      </p>
+      <pre>
+          <code class="language-css" data-language="CSS">
+main {
+  min-height: calc(100vh - 80px - 20vw);
+}
+            </code></pre>
+      <p>
+        Det gör att den kommer fylla upp precis så mycket höjd som "finns kvar"
+        i viewport efter att headern använt sina 80px höjd och footern använt
+        sina 20vw höjd. <code>calc()</code> kan alltså räkna med
+        <em>olika</em> enheter!
+      </p>
+      <p>
+        <code>calc()</code> kan räkna alla fyra räknesätten: plus(+), minus(-),
+        gånger(*) och delat(/).
+      </p>
+    </main>
+    <footer class="centered">Denna footer är 20vw hög.</footer>
+  </body>
+  <script>
+    hljs.highlightAll()
+  </script>
+</html>
